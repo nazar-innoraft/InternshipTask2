@@ -52,16 +52,16 @@ nav a {
   height: 100%;
   background: black;
   color: white;
-  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 .container1 .left .socal {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 120%;
+  margin: 20px;
 }
 .container1 .left .socal p {
   writing-mode: vertical-lr;
@@ -86,9 +86,9 @@ nav a {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 .container1 .right .text {
   width: 60%;
@@ -125,6 +125,19 @@ nav a {
   margin: 20px 0;
   border: 3px solid rgb(224, 199, 72);
   border-radius: 30px;
+}
+.container1 .right .slidebtn {
+  align-self: flex-end;
+}
+.container1 .right .slidebtn a {
+  color: white;
+  font-size: 50px;
+  display: inline-block;
+  padding: 10px;
+}
+.container1 .right .slidebtn a:hover {
+  background: white;
+  color: black;
 }
 .container1 .right img {
   width: 100%;
